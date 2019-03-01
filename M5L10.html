@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+	<h2>javaScript Function</h2>
+	<p>this example calls the fullName method of person ,using it on person1:</p>
+	<p id="demo"></p>
+
+	<script >
+		var person={
+		fullNmae:function(city,country){
+				return this.firstName +""+this.lastName +"," +city+","+country;
+			}
+		}
+
+		var person1={
+			firstName:"john",
+			lastName:"doe"
+		}
+		var person2={
+			firstName:"mary",
+			lastName:"doe"
+		}
+		var x= person.fullName.call(person1,"oslo","Norway");
+		
+		document.getElementById("demo").innerHTML= x;
+	</script>
+
+</body>
+</html>

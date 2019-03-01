@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+	<h2>javaScript Function</h2>
+	<p> myObject.fullName() will return john doe:</p>
+	<p id="demo"></p>
+
+	<script >
+		var myObject={
+			firstName:"john",
+			lastName:"doe"
+			fullNmae:function(){
+				return this.firstName +""+this.lastName;
+			}
+		}
+		
+		document.getElementById("demo").innerHTML=myobject.fullName();
+	</script>
+
+</body>
+</html>

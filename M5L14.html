@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+	<h2>javaScript Function closures</h2>
+	<p>counting with a global variable.</p>
+	<p id="demo"></p>
+
+	<script>
+		// initiate counter
+		var counter=0;
+		//function to increment counter
+		function add(){
+			counter+=1;
+		}
+		//cal nadd()3 times
+		add();
+		add();
+		add();
+		//the counter should now be 3
+		document.getElementById("demo").innerHTML= "the counter is:" + counter;
+
+	</script>
